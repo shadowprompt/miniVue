@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mini Vue</title>
+</head>
+
+<body>
+  <div id='app'>
+  </div>
+</body>
+<script src='./utils.js'></script>
+<script src='./index.js'></script>
+
+<script>
+  var vm = new Vue({
+    name: 'root',
+    el: '#app',
+    render(h) {
+      return h('div', 'ok');
+    },
+  });
+  console.log('vm ', vm);
+</script>
+</html>
